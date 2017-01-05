@@ -1,1 +1,19 @@
-theme: jekyll-theme-minimal
+title: Indescrible
+email: lowkay@indescrible.co.uk
+description: >
+  The personal website of software engineer Luke Terry.
+  Currently working at MindLink in London.
+  The views expressed in this site are my own.
+baseurl: ""
+url: "http://www.indescrible.co.uk"
+twitter_username: lowkay
+github_username:  lowkay
+
+# Build settings
+markdown: kramdown
+theme: minima
+gems:
+  - jekyll-feed
+exclude:
+  - Gemfile
+  - Gemfile.lock
