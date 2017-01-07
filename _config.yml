@@ -17,3 +17,4 @@ gems:
 exclude:
   - Gemfile
   - Gemfile.lock
+excerpt_separator: <!--more-->
