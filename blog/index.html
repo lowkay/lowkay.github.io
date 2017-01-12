@@ -15,6 +15,20 @@ title: Blog
         </h2>
 
         {{post.excerpt}}
+
+        {% capture content_words %} 
+          {{ post.content | number_of_words }} 
+        {% endcapture %} 
+
+        {% capture excerpt_words %} 
+          {{ post.excerpt | number_of_words }} 
+        {% endcapture %} 
+
+        {% if excerpt_words != content_words %}
+        <p>
+          <a class="more-link" href="{{ post.url | relative_url }}#read-more" role="button">Read more...</a>
+        </p>
+        {% endif %}
       </li>
     {% endfor %}
   </ul>
