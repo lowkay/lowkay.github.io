@@ -1,3 +1,8 @@
 ---
 ---
 @import "minima";
+@import "github";
+
+ol + p {
+    margin-top: 1em;
+}
